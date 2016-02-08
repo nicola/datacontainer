@@ -1,0 +1,33 @@
+{
+  "name": "datacontainer",
+  "version": "0.1.0",
+  "description": "Simple data containers from JSON files (light version of LDP)",
+  "main": "index.js",
+  "directories": {
+    "example": "examples"
+  },
+  "dependencies": {
+    "json-to-ldp": "^0.1.3",
+    "jsonpointer": "^3.0.0",
+    "jsonpointer-http": "^1.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicola/datacontainer"
+  },
+  "keywords": [
+    "ldp",
+    "data",
+    "container"
+  ],
+  "author": "Nicola Greco <me@nicola.io> (http://nicolagreco.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nicola/datacontainer/issues"
+  },
+  "homepage": "https://github.com/nicola/datacontainer"
+}
