@@ -1,5 +1,5 @@
-var router = require('../').router
 var http = require('http')
+var router = require('../router')
 
 // Create a http server and load the router
 var data = {

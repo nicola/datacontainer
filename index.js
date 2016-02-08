@@ -1,14 +1,7 @@
 module.exports = DataContainer
-module.exports.router = router
 
 var jsonpointer = require('jsonpointer')
 var traverse = require('json-to-ldp').traverse
-var jsonpointerRouter = require('jsonpointer-http')
-
-function router (data, opts) {
-  var store = DataContainer(data, opts)
-  return jsonpointerRouter(store)
-}
 
 function DataContainer (data, opts) {
   if (!(this instanceof DataContainer)) return new DataContainer(data, opts)

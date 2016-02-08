@@ -8,10 +8,11 @@
   },
   "dependencies": {
     "json-to-ldp": "^0.1.3",
-    "jsonpointer": "^3.0.0",
-    "jsonpointer-http": "^1.0.5"
+    "jsonpointer": "^3.0.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "jsonpointer-http": "^1.0.6"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
