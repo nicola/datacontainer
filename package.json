@@ -11,7 +11,7 @@
     "jsonpointer": "^3.0.0"
   },
   "devDependencies": {
-    "jsonpointer-http": "^1.0.6"
+    "jsonpointer-http": "^1.0.7"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
