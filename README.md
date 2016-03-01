@@ -1,6 +1,6 @@
 # datacontainer
 
-> Container for data
+> Containers for data
 
 Built on top of [jsonpointers](https://tools.ietf.org/html/rfc6901), [json merge patch](https://tools.ietf.org/html/rfc7386) and [json-to-ldp](https://github.com/nicola/json-to-ldp)
 
