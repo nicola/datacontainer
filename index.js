@@ -1,6 +1,7 @@
 module.exports = DataContainer
 
 var jsonpointer = require('jsonpointer')
+var jsonmergepatch = require('json-merge-patch')
 var traverse = require('json-to-ldp').traverse
 
 function DataContainer (data, opts) {
@@ -17,6 +18,15 @@ DataContainer.prototype.get = function (url, cb) {
 
 DataContainer.prototype.set = function (url, content, cb) {
   cb(null, jsonpointer.set(this.data, url, content))
+}
+
+DataContainer.prototype.update = function (url, patch, cb) {
+  var self = this
+  this.get(url, function (err, content) {
+    if (err) return cb(err)
+    var updated = jsonmergepatch.apply(content, patch)
+    cb(null, jsonpointer.set(self.data, url, updated))
+  })
 }
 
 DataContainer.prototype.delete = function (url, cb) {
