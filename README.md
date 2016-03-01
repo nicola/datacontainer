@@ -27,23 +27,7 @@ GET /people/nicola
 
 ```
 PUT /people/nicola/geo '{ lat: 10.47, lon: 33.86 }'
---
-{
-  lat: 10.47,
-  lon: 33.86
-}
-```
-
-```
 PATCH /people/nicola '{ name: "Nick" }'
---
-{
-  lat: 10.47,
-  lon: 33.86
-}
-```
-
-```
 GET /people/nicola
 {
   contains: ["geo"],
