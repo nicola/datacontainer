@@ -1,7 +1,8 @@
 # datacontainer
-Simple data containers from JSON files (light version of LDP)
 
-Built on top of [json-to-ldp](https://github.com/nicola/json-to-ldp)
+> Container for data
+
+Built on top of [jsonpointers](https://tools.ietf.org/html/rfc6901), [json merge patch](https://tools.ietf.org/html/rfc7386) and [json-to-ldp](https://github.com/nicola/json-to-ldp)
 
 ## Idea
 
@@ -25,7 +26,16 @@ GET /people/nicola
 ```
 
 ```
-PUT /people/nicola/geo
+PUT /people/nicola/geo '{ lat: 10.47, lon: 33.86 }'
+--
+{
+  lat: 10.47,
+  lon: 33.86
+}
+```
+
+```
+PATCH /people/nicola '{ name: "Nick" }'
 --
 {
   lat: 10.47,
@@ -37,7 +47,7 @@ PUT /people/nicola/geo
 GET /people/nicola
 {
   contains: ["geo"],
-  name: "Nicola",
+  name: "Nick",
   surname: "Greco"
 }
 ```
