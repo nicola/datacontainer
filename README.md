@@ -6,6 +6,15 @@ Built on top of [jsonpointers](https://tools.ietf.org/html/rfc6901), [json merge
 
 ## Idea
 
+### APIs
+
+#### .get(url, cb)
+#### .set(url, json, cb)
+#### .update(url, json, cb)
+
+
+### HTTP requests
+
 Given a database, one should be able to navigate data in this way:
 
 ```
